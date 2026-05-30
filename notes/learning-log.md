@@ -3,3 +3,4 @@
   daily commit cadence small but consistent to maintain visible
   iteration.
 - Next step: kick off the Figma wireframes for the four pages.
+- Mantra: ship small, ship daily — momentum is the deliverable.
