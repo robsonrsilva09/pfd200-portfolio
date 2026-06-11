@@ -481,3 +481,36 @@ a:hover {
 .about-text p:last-child {
   margin-bottom: 0;
 }
+
+/* -------------------------------------------------------------
+   13. About — skills & tools
+   ------------------------------------------------------------- */
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-4);
+}
+
+.skill-card {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.skill-card .icon-box {
+  margin-bottom: 0;
+  flex-shrink: 0;
+}
+
+.skill-name {
+  display: block;
+  font-weight: var(--fw-semibold);
+  font-size: var(--fs-body);
+}
+
+.skill-status {
+  display: block;
+  font-size: var(--fs-small);
+  color: var(--color-text-muted);
+}
