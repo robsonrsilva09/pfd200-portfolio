@@ -1,0 +1,96 @@
+/* ============================================================
+   PFD200 Portfolio — Main Stylesheet
+   Robson Da Silva — NCGID125482
+   ============================================================ */
+
+/* -------------------------------------------------------------
+   1. Design tokens
+   Centralised design decisions exposed as CSS custom properties.
+   ------------------------------------------------------------- */
+
+:root {
+  /* Color palette — dark theme */
+  --color-bg: #0E0E10;
+  --color-surface: #1A1A1F;
+  --color-elevated: #26262C;
+  --color-text: #F5F5F7;
+  --color-text-secondary: #A0A0A8;
+  --color-text-muted: #6B6B73;
+  --color-accent: #6E9EFF;
+  --color-accent-hover: #5588F0;
+  --color-border: #2A2A30;
+  --color-success: #4ADE80;
+
+  /* Typography — Inter from Google Fonts */
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+
+  --fs-display: clamp(2.5rem, 6vw, 4.5rem); /* ~72px */
+  --fs-h1: clamp(2rem, 4vw, 3rem);          /* ~48px */
+  --fs-h2: 2.25rem;                          /* 36px */
+  --fs-h3: 1.5rem;                           /* 24px */
+  --fs-body-lg: 1.125rem;                    /* 18px */
+  --fs-body: 1rem;                           /* 16px */
+  --fs-small: 0.875rem;                      /* 14px */
+  --fs-tiny: 0.75rem;                        /* 12px */
+
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+
+  /* Spacing (8pt grid) */
+  --space-1: 0.25rem;  /* 4px */
+  --space-2: 0.5rem;   /* 8px */
+  --space-3: 1rem;     /* 16px */
+  --space-4: 1.5rem;   /* 24px */
+  --space-5: 2rem;     /* 32px */
+  --space-6: 3rem;     /* 48px */
+  --space-7: 4rem;     /* 64px */
+  --space-8: 6rem;     /* 96px */
+  --space-9: 8rem;     /* 128px */
+
+  /* Border radius */
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+
+  /* Layout */
+  --container-max: 1200px;
+
+  /* Transitions */
+  --transition: 200ms ease;
+}
+
+/* -------------------------------------------------------------
+   2. Base styles
+   Global defaults applied to the document body.
+   ------------------------------------------------------------- */
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  font-size: var(--fs-body);
+  font-weight: var(--fw-regular);
+}
+
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+  transition: color var(--transition);
+}
+
+a:hover {
+  color: var(--color-accent-hover);
+}
+
+/* -------------------------------------------------------------
+   3. TODO sections (will be filled in next commits)
+   ------------------------------------------------------------- */
+
+/* TODO: layout container */
+/* TODO: navigation bar */
+/* TODO: hero section */
+/* TODO: cards and grids */
+/* TODO: footer */
+/* TODO: responsive breakpoints */
