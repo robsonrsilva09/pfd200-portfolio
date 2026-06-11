@@ -514,3 +514,63 @@ a:hover {
   font-size: var(--fs-small);
   color: var(--color-text-muted);
 }
+
+/* -------------------------------------------------------------
+   14. About — education timeline
+   ------------------------------------------------------------- */
+
+.timeline {
+  max-width: 720px;
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: var(--space-5);
+  padding-bottom: var(--space-6);
+}
+
+/* Connecting line, hidden on the last entry */
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: 8px;
+  bottom: 0;
+  width: 1px;
+  background-color: var(--color-border);
+}
+
+.timeline-item:last-child {
+  padding-bottom: 0;
+}
+
+.timeline-item:last-child::before {
+  display: none;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background-color: var(--color-accent);
+}
+
+.timeline-head {
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-1);
+}
+
+.timeline-year {
+  font-size: var(--fs-body-lg);
+  font-weight: var(--fw-bold);
+  color: var(--color-text);
+  margin-right: var(--space-2);
+}
+
+.timeline-sub {
+  font-size: var(--fs-small);
+  color: var(--color-text-muted);
+}
