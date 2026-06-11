@@ -152,7 +152,132 @@ a:hover {
   background-color: var(--color-accent);
 }
 
-/* TODO: hero section */
-/* TODO: cards and grids */
-/* TODO: footer */
-/* TODO: responsive breakpoints */
+/* -------------------------------------------------------------
+   6. Reusable section + heading helpers
+   ------------------------------------------------------------- */
+
+.section {
+  padding-block: var(--space-8);
+}
+
+.section-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-4);
+  margin-bottom: var(--space-6);
+}
+
+.section-title {
+  font-size: var(--fs-h2);
+  font-weight: var(--fw-bold);
+  letter-spacing: -0.5px;
+}
+
+/* Small uppercase label that sits above a heading */
+.eyebrow {
+  display: block;
+  font-size: var(--fs-tiny);
+  font-weight: var(--fw-semibold);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--color-accent);
+}
+
+/* Centred page intro used on About, Projects and Contact */
+.page-header {
+  text-align: center;
+  padding-block: var(--space-8) var(--space-6);
+}
+
+.page-header .eyebrow {
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-3);
+}
+
+.page-header h1 {
+  font-size: var(--fs-h1);
+  font-weight: var(--fw-bold);
+  letter-spacing: -1px;
+  margin-bottom: var(--space-3);
+}
+
+.page-header .lead {
+  max-width: 560px;
+  margin-inline: auto;
+  color: var(--color-text-secondary);
+  font-size: var(--fs-body-lg);
+}
+
+/* -------------------------------------------------------------
+   7. Buttons
+   ------------------------------------------------------------- */
+
+.btn {
+  display: inline-block;
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--radius-md);
+  font-size: var(--fs-body);
+  font-weight: var(--fw-semibold);
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: background-color var(--transition), border-color var(--transition), color var(--transition);
+}
+
+.btn-primary {
+  background-color: var(--color-accent);
+  color: var(--color-bg);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-accent-hover);
+  color: var(--color-bg);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  border-color: var(--color-border);
+  color: var(--color-text);
+}
+
+.btn-secondary:hover {
+  border-color: var(--color-text-secondary);
+  color: var(--color-text);
+}
+
+/* -------------------------------------------------------------
+   8. Home — hero
+   ------------------------------------------------------------- */
+
+.hero {
+  text-align: center;
+  padding-block: var(--space-9) var(--space-8);
+}
+
+.hero .eyebrow {
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-4);
+}
+
+.hero h1 {
+  font-size: var(--fs-display);
+  font-weight: var(--fw-bold);
+  letter-spacing: -2px;
+  line-height: 1.05;
+  margin-bottom: var(--space-4);
+}
+
+.hero .lead {
+  max-width: 480px;
+  margin-inline: auto;
+  color: var(--color-text-secondary);
+  font-size: var(--fs-body-lg);
+  margin-bottom: var(--space-6);
+}
+
+.hero-actions {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+}
