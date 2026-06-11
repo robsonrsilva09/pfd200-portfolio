@@ -152,6 +152,29 @@ a:hover {
   background-color: var(--color-accent);
 }
 
+/* Hamburger button — hidden on desktop, revealed on mobile */
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  padding: 0 9px;
+}
+
+.nav-toggle-bar {
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: var(--color-text);
+  border-radius: 2px;
+}
+
 /* -------------------------------------------------------------
    6. Reusable section + heading helpers
    ------------------------------------------------------------- */
