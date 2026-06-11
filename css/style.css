@@ -85,11 +85,73 @@ a:hover {
 }
 
 /* -------------------------------------------------------------
-   3. TODO sections (will be filled in next commits)
+   4. Layout container
    ------------------------------------------------------------- */
 
-/* TODO: layout container */
-/* TODO: navigation bar */
+.container {
+  max-width: var(--container-max);
+  margin-inline: auto;
+  padding-inline: var(--space-4);
+}
+
+/* -------------------------------------------------------------
+   5. Site header — navigation bar
+   ------------------------------------------------------------- */
+
+.site-header {
+  position: sticky;
+  top: 0;
+  background-color: var(--color-bg);
+  border-bottom: 1px solid var(--color-border);
+  z-index: 10;
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+}
+
+.site-logo {
+  font-size: var(--fs-h3);
+  font-weight: var(--fw-bold);
+  color: var(--color-accent);
+  letter-spacing: -0.5px;
+}
+
+.site-nav-links {
+  display: flex;
+  gap: var(--space-5);
+  list-style: none;
+}
+
+.site-nav-links a {
+  color: var(--color-text-secondary);
+  font-size: var(--fs-body);
+  font-weight: var(--fw-medium);
+  position: relative;
+  padding-block: var(--space-2);
+}
+
+.site-nav-links a:hover {
+  color: var(--color-text);
+}
+
+.site-nav-links a.is-active {
+  color: var(--color-text);
+}
+
+.site-nav-links a.is-active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: var(--color-accent);
+}
+
 /* TODO: hero section */
 /* TODO: cards and grids */
 /* TODO: footer */
