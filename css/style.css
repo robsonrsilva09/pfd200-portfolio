@@ -281,3 +281,55 @@ a:hover {
   gap: var(--space-3);
   flex-wrap: wrap;
 }
+
+/* -------------------------------------------------------------
+   9. Cards (shared) + Home "What I do"
+   ------------------------------------------------------------- */
+
+.card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-4);
+}
+
+/* Small accent-tinted square that holds an inline SVG icon */
+.icon-box {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-md);
+  background-color: var(--color-elevated);
+  color: var(--color-accent);
+  margin-bottom: var(--space-3);
+}
+
+.icon-box svg {
+  width: 18px;
+  height: 18px;
+}
+
+.card h3 {
+  font-size: var(--fs-h3);
+  font-weight: var(--fw-semibold);
+  margin-bottom: var(--space-2);
+}
+
+.card p {
+  color: var(--color-text-secondary);
+  font-size: var(--fs-small);
+}
+
+/* "What I do" heading is centred */
+.what-i-do .section-title {
+  text-align: center;
+  margin-bottom: var(--space-6);
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-4);
+}
