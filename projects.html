@@ -42,8 +42,93 @@
       <p class="lead">A selected set of web, security, and IoT projects created while developing my practical computing skills.</p>
     </header>
 
-    <!-- TODO: filter chips -->
-    <!-- TODO: projects grid -->
+    <!-- Filter chips -->
+    <section class="container">
+      <div class="filter-chips" role="group" aria-label="Filter projects by category">
+        <button class="chip is-active" data-filter="all">All</button>
+        <button class="chip" data-filter="web">Web</button>
+        <button class="chip" data-filter="security">Security</button>
+        <button class="chip" data-filter="iot">IoT</button>
+      </div>
+
+      <!-- Projects grid -->
+      <div class="projects-grid">
+
+        <article class="card project-card" data-category="web">
+          <div class="media-placeholder project-thumb">Project thumbnail</div>
+          <div class="project-body">
+            <span class="eyebrow">Web</span>
+            <h3>PFD200 Portfolio</h3>
+            <p>This very site, built from scratch with HTML, CSS, and vanilla JavaScript. Demonstrates UI/UX principles, responsive design, and a code-first development workflow.</p>
+            <div class="tag-list">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JS</span>
+            </div>
+            <div class="project-links">
+              <a href="https://robsonrsilva09.github.io/pfd200-portfolio/" class="link-arrow">Live →</a>
+              <a href="https://github.com/robsonrsilva09/pfd200-portfolio" class="link-arrow">Code →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card project-card" data-category="security">
+          <div class="media-placeholder project-thumb">Project thumbnail</div>
+          <div class="project-body">
+            <span class="eyebrow">Security</span>
+            <h3>CMP214 As1 — Brick &amp; Mortar</h3>
+            <p>A security and research-focused assessment exploring risks, mitigations, and practical recommendations.</p>
+            <div class="tag-list">
+              <span class="tag">Research</span>
+              <span class="tag">Security</span>
+              <span class="tag">Presentation</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="link-arrow">Live →</a>
+              <a href="#" class="link-arrow">Code →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card project-card" data-category="web security">
+          <div class="media-placeholder project-thumb">Project thumbnail</div>
+          <div class="project-body">
+            <span class="eyebrow">Web / Security</span>
+            <h3>CMP214 As2 — Fixerupper</h3>
+            <p>A web and security project using PHP and MySQL, with attention to validation, secure output, and database structure.</p>
+            <div class="tag-list">
+              <span class="tag">PHP</span>
+              <span class="tag">MySQL</span>
+              <span class="tag">Security</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="link-arrow">Live →</a>
+              <a href="#" class="link-arrow">Code →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card project-card" data-category="iot">
+          <div class="media-placeholder project-thumb">Project thumbnail</div>
+          <div class="project-body">
+            <span class="eyebrow">IoT</span>
+            <h3>CMP213 IoT Project</h3>
+            <p>An IoT prototype using Raspberry Pi to monitor environmental data with mobile-accessible alerts. In development for CMP213 — to be updated post-Week 12.</p>
+            <div class="tag-list">
+              <span class="tag">Raspberry Pi</span>
+              <span class="tag">Python</span>
+              <span class="tag">Sensors</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="link-arrow">Live →</a>
+              <a href="#" class="link-arrow">Code →</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
   </main>
 
   <footer class="site-footer">

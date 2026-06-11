@@ -574,3 +574,109 @@ a:hover {
   font-size: var(--fs-small);
   color: var(--color-text-muted);
 }
+
+/* -------------------------------------------------------------
+   15. Projects — filter chips
+   ------------------------------------------------------------- */
+
+.filter-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-bottom: var(--space-6);
+}
+
+.chip {
+  padding: var(--space-2) var(--space-3);
+  border-radius: 999px;
+  border: 1px solid var(--color-border);
+  background-color: transparent;
+  color: var(--color-text-secondary);
+  font-size: var(--fs-small);
+  font-weight: var(--fw-medium);
+  cursor: pointer;
+  transition: background-color var(--transition), color var(--transition), border-color var(--transition);
+}
+
+.chip:hover {
+  color: var(--color-text);
+  border-color: var(--color-text-secondary);
+}
+
+.chip.is-active {
+  background-color: var(--color-accent);
+  border-color: var(--color-accent);
+  color: var(--color-bg);
+}
+
+/* -------------------------------------------------------------
+   16. Projects — grid + cards
+   ------------------------------------------------------------- */
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-5);
+}
+
+.project-card {
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Hidden by the filter when a category is not matched */
+.project-card.is-hidden {
+  display: none;
+}
+
+.project-thumb {
+  height: 180px;
+}
+
+.project-body {
+  padding: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.project-body .eyebrow {
+  margin-bottom: var(--space-2);
+}
+
+.project-body h3 {
+  font-size: var(--fs-h3);
+  font-weight: var(--fw-semibold);
+  margin-bottom: var(--space-2);
+}
+
+.project-body p {
+  color: var(--color-text-secondary);
+  font-size: var(--fs-small);
+  margin-bottom: var(--space-4);
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-bottom: var(--space-4);
+}
+
+.tag {
+  padding: var(--space-1) var(--space-2);
+  border-radius: var(--radius-sm);
+  background-color: var(--color-elevated);
+  color: var(--color-text-secondary);
+  font-size: var(--fs-tiny);
+  font-weight: var(--fw-medium);
+}
+
+/* Push the links to the bottom so cards of unequal text align */
+.project-links {
+  display: flex;
+  gap: var(--space-4);
+  margin-top: auto;
+}
