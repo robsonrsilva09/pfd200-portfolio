@@ -4,6 +4,22 @@
    ============================================================ */
 
 /* -------------------------------------------------------------
+   Navigation — mobile hamburger toggle
+   Shows/hides the nav links on small screens and keeps the
+   aria-expanded state in sync for accessibility.
+   ------------------------------------------------------------- */
+
+const navToggle = document.querySelector('.nav-toggle');
+const navLinks = document.querySelector('.site-nav-links');
+
+if (navToggle && navLinks) {
+  navToggle.addEventListener('click', () => {
+    const isOpen = navLinks.classList.toggle('is-open');
+    navToggle.setAttribute('aria-expanded', String(isOpen));
+  });
+}
+
+/* -------------------------------------------------------------
    Projects page — filter chips
    Shows only the cards whose data-category matches the chip.
    A card may belong to more than one category (space separated).
