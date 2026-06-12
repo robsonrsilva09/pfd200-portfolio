@@ -462,9 +462,15 @@ a:hover {
   align-items: start;
 }
 
-.about-photo {
+.profile-photo {
+  width: 100%;
+  max-width: 400px;
   aspect-ratio: 1 / 1;
-  border-radius: var(--radius-lg);
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid var(--color-border);
+  display: block;
+  margin: 0 auto;
 }
 
 .about-text h2 {
