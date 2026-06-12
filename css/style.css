@@ -841,9 +841,8 @@ a:hover {
     grid-template-columns: 1fr;
   }
 
-  .about-photo {
-    max-width: 320px;
-    margin-inline: auto;
+  .profile-photo {
+    max-width: 240px;
   }
 
   .featured-card .media-placeholder {
