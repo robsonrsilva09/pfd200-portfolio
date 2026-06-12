@@ -1,40 +1,83 @@
-Personal portfolio website built as the mini-project for the
-PFD200 (Professional Development) module at NCG Leicester,
-FdSc Computing — Year 2, Semester 2.
+# PFD200 Portfolio
 
-This repository fulfils Task 2 (mini-project) and Task 3 (digital portfolio)
-of the assessment in a single deliverable.
+Personal portfolio website built for the PFD200 (Professional Development) module at NCG Leicester, FdSc Computing, Year 2 (Level 5).
 
-Live demo:** https://robsonrsilva09.github.io/pfd200-portfolio/
+Live site: https://robsonrsilva09.github.io/pfd200-portfolio/
 
-Goal
+## About this project
 
-To demonstrate UI/UX principles, front-end fundamentals, and a deployable
-workflow through a personal portfolio website built from scratch with
-HTML, CSS, and vanilla JavaScript.
+This is a personal portfolio site I built from scratch with HTML, CSS, and vanilla JavaScript. It covers Task 2 (mini-project) and Task 3 (digital portfolio) of the module assessment in a single deliverable.
 
-Tech stack
+The aim was to put UI/UX principles and front-end fundamentals into practice, and to ship a real, deployed website using a code-first workflow instead of a website builder.
+
+## Pages
+
+- **Home:** short intro, a "What I do" section, and a featured project
+- **About:** background, a skills and tools grid, and an education timeline
+- **Projects:** a filterable grid of my course and personal projects
+- **Contact:** direct contact details and a simple message form
+
+## Features
+
+- Dark theme built on CSS custom properties (design tokens for colour, type, spacing, and radius)
+- Responsive layout for desktop, tablet, and mobile
+- Mobile navigation with a hamburger toggle
+- Project filter chips (All, Web, Security, IoT) driven by vanilla JavaScript
+- Circular profile avatar
+- Reusable navigation bar and footer across all four pages
+
+## Tech stack
 
 - HTML5 semantic markup
-- CSS3 with custom properties (no framework)
-- Vanilla JavaScript (no build step)
+- CSS3 with custom properties, no framework
+- Vanilla JavaScript, no build step and no dependencies
 - Hosted on GitHub Pages
-- Wireframes designed in Figma
+- Wireframes and mockups designed in Figma
 
-Project plan
+## Project structure
 
-- Week 1 (26/05 – 01/06) — Wireframes, scaffold, Home, About
-- Week 2 (02/06 – 08/06) — Projects, Contact, responsive, polish
-- Week 3 (09/06 – 12/06) — Report writing and submission
+```
+pfd200-portfolio/
+  index.html        Home page
+  about.html        About page
+  projects.html     Projects page
+  contact.html      Contact page
+  css/
+    reset.css       Modern CSS reset (Bell, 2019)
+    style.css       Design tokens and all page styles
+  js/
+    main.js         Mobile nav toggle and project filters
+  assets/img/       Images (profile avatar)
+  design/           High-fidelity Figma mockups
+  screenshots/      Desktop and mobile captures of the live site
+```
 
-Module context
+## Running it locally
 
-- Module: PFD200 — Professional Development
-- Assessment: Portfolio + Mini-project + Digital Portfolio (100%)
+There is no build step. Clone the repository and open `index.html` in a browser, or serve the folder with any static server:
+
+```
+python3 -m http.server 8000
+```
+
+Then visit http://localhost:8000.
+
+## Project plan
+
+- Week 1 (26/05 to 01/06): wireframes, scaffold, Home and About pages
+- Week 2 (02/06 to 08/06): Projects, Contact, responsive layout, polish
+- Week 3 (09/06 to 12/06): report writing and submission
+
+## Module context
+
+- Module: PFD200, Professional Development
+- Course: FdSc Computing, Year 2 (Level 5), NCG Leicester
 - Deadline: 12/06/2026
 
+## License
 
+Released under the MIT License. See [LICENSE](LICENSE) for details.
 
-Author
+## Author
 
-Robson Da Silva — NCGID125482
+Robson Da Silva (NCGID125482)
